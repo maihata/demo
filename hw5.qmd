@@ -7,12 +7,19 @@ editor: visual
 ```{r}
 library(tidyverse)
 ```
+
 ```{r}
 gss_cat %>% 
   ggplot(aes(tvhours, partyid)) +
   geom_col()
 ```
 
+```{r}
+library(tidyverse)
+gss_cat %>% 
+  ggplot(aes(tvhours, partyid)) +
+  geom_point()
+```
 
 ## Quarto
 
